@@ -176,7 +176,17 @@ visible under **Move History**.
 
 ---
 
-## 📄 License
+## 👨‍💻 Author
 
-This project was generated as a learning / portfolio scaffold. Use, modify
-and extend it freely.
+**Sahil Panchal**
+Full Stack Developer
+
+---
+
+## ⭐ Support
+
+If you like this project, consider giving it a star!
+
+---
+
+**📈 StockSense - Real-time inventory, zero spreadsheets.**
