@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @apply bg-canvas text-gray-800 antialiased;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #d9c4d3;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.card {
+  @apply bg-surface rounded-2xl shadow-card border border-border p-5;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-medium transition-all duration-150 active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed;
+}
+.btn-primary {
+  @apply btn bg-primary text-white hover:bg-primary-600 shadow-sm;
+}
+.btn-secondary {
+  @apply btn bg-primary-50 text-primary hover:bg-primary-100;
+}
+.btn-outline {
+  @apply btn border border-border bg-white text-gray-700 hover:bg-gray-50;
+}
+.btn-danger {
+  @apply btn bg-danger/10 text-danger hover:bg-danger/20;
+}
+.btn-ghost {
+  @apply btn text-gray-500 hover:bg-gray-100;
+}
+
+.input {
+  @apply w-full rounded-xl border border-border bg-white px-3.5 py-2.5 text-sm text-gray-800 placeholder-gray-400 outline-none transition-all focus:border-primary focus:ring-2 focus:ring-primary/15;
+}
+
+.label {
+  @apply block text-xs font-semibold uppercase tracking-wide text-gray-500 mb-1.5;
+}
+
+.badge {
+  @apply inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-medium;
+}
+.badge-draft { @apply badge bg-gray-100 text-gray-600; }
+.badge-waiting { @apply badge bg-warning/15 text-yellow-700; }
+.badge-ready { @apply badge bg-info/15 text-blue-700; }
+.badge-done { @apply badge bg-success/15 text-green-700; }
+.badge-cancelled { @apply badge bg-danger/15 text-red-700; }
+
+.table-wrap {
+  @apply overflow-x-auto rounded-2xl border border-border;
+}
+table.data-table {
+  @apply w-full text-sm border-collapse bg-surface;
+}
+table.data-table thead {
+  @apply bg-canvas text-gray-500 text-xs uppercase tracking-wide;
+}
+table.data-table th {
+  @apply text-left font-semibold px-4 py-3 border-b border-border whitespace-nowrap;
+}
+table.data-table td {
+  @apply px-4 py-3 border-b border-border text-gray-700 whitespace-nowrap;
+}
+table.data-table tbody tr {
+  @apply hover:bg-primary-50/40 transition-colors;
+}
